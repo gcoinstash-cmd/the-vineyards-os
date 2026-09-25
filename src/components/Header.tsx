@@ -26,7 +26,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
             <h1 className="font-serif text-xl font-semibold tracking-wide text-[#121212] sm:text-2xl">
               PALMDALE CREST
             </h1>
-            <p className="font-sans text-[10px] tracking-widest uppercase text-[#AF9E81] font-medium">
+            <p className="font-sans text-xs font-semibold tracking-wider tracking-widest uppercase text-[#AF9E81] font-medium">
               Premium Townhouse HOA
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
           {onOpenAdmin && (
             <button
               onClick={onOpenAdmin}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#4A1521]/10 hover:bg-[#4A1521]/20 border border-[#4A1521]/30 text-[#4A1521] font-mono text-[10px] uppercase font-bold tracking-wider transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#4A1521]/10 hover:bg-[#4A1521]/20 border border-[#4A1521]/30 text-[#4A1521] font-mono text-base font-semibold min-h-[44px] font-semibold tracking-wider uppercase font-bold tracking-wider transition-all cursor-pointer"
               title="Board Member Portal"
             >
               <Key size={11} />
@@ -91,7 +91,7 @@ export default function Header({ onOpenAdmin }: HeaderProps) {
             </div>
             <div className="text-left hidden md:block">
               <p className="font-sans text-xs font-semibold text-[#121212]">Evelyn Vance</p>
-              <p className="font-sans text-[10px] text-stone-400">Owner, Unit 14-B</p>
+              <p className="font-sans text-xs font-semibold tracking-wider text-stone-400">Owner, Unit 14-B</p>
             </div>
           </div>
         </div>
